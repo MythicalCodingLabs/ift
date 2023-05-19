@@ -9,13 +9,26 @@
   </head>
 
   <body onload="load()">
+    <dialog id="buyStuff" class="popupBuy">
+      <h2>Buy in game cash</h2>
+      <p>Please note that the game is still in development and any purchases made are only saved to your CURRENT COMPUTER! If your save is lost there are NO REFUNDS!</p>
+      <fieldset>
+  <legend>Values</legend>
+  <label><input type="radio" name="groupName" value="1" checked> 100K Cash for $0.50</label><br>
+  <label><input type="radio" name="groupName" value="2"> 1M Cash for $1</label><br>
+  <label><input type="radio" name="groupName" value="3"> 100M for $5</label>
+</fieldset>
+<br>
+      <button onclick="continueBuy()">Continue</button>
+      <button onclick="closeBuy()">Close</button>
+    </dialog>
     <dialog class="popup" id="menu">
   <span class="popuptext" id="myPopup"><h2>Menu</h2>
-  <p id="menuMoney"></p><p id="menuLftMoney"></p><p id="menuCashPerSec"></p><button onclick="clearSave()">Clear Save</button><button onclick="checkDev()">Dev Tools</button><div id="devTools"></div></span>
+  <p id="menuMoney"></p><p id="menuLftMoney"></p><p id="menuCashPerSec"></p><button onclick="clearSave()">Clear Save</button><button onclick="buyStuff()">Buy Cash</button><br><button onclick="checkDev()" style="text-align: center;">Dev Tools</button><div id="devTools"></div></span>
 </dialog>
 
     <div class="titleMenu">
-    <h1 class="titleMain">Idle Factory Tycoon BETA[0.10.0]</h1><div class="menuBtn" onclick="myFunction()">Menu</div>
+    <h1 class="titleMain">Idle Factory Tycoon V1.0.0</h1><div class="menuBtn" onclick="myFunction()">Menu</div>
     </div>
     <br>
     <br>
