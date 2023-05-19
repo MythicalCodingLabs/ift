@@ -240,3 +240,29 @@ html{
   overflow: auto;
   white-space: nowrap;
 }
+.loadScreen{
+  height: 100%; 
+  width: 100%; 
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.center {
+  height: 100%; 
+  width: 100%; 
+  margin: auto;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+.popupBuy{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(173, 173, 173);
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 0px;
+  width: 100%;
+}
+.popupBuy::backdrop{
+  background-color: gray;
+  opacity: 0.5;
+}
